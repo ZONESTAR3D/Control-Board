@@ -27,12 +27,8 @@
 #endif
 
 #define BOARD_INFO_NAME      "ZONESTAR ZM3E2 V1.0"
-
 #define DISABLE_DEBUG
 //#define DISABLE_JTAG
-
-
-
 #define FLASH_EEPROM_EMULATION
 #define EEPROM_PAGE_SIZE     (0x800) // 2KB
 #define EEPROM_START_ADDRESS uint32(0x8000000 + (STM32_FLASH_SIZE) * 1024 - 2 * EEPROM_PAGE_SIZE)
@@ -50,8 +46,8 @@
 //	PA5     SD_SCK      //	PB5     Z_DIR           //	PC5         BTN_EN2
 //	PA6     SD_MISO 	//	PB6     Z_STEP          //	PC6         FAN1
 //	PA7     SD_MOSI     //	PB7     Z_EN            //	PC7         FIL_RUNOUT
-//	PA8     SD_SCK      //	PB8     Y_STEP          //	PC8         X_EN
-//	PA9     X_DIR       //	PB9     Y_DIR           //	PC9         X_STEP
+//	PA8     X_DIR       //	PB8     Y_STEP          //	PC8         X_EN
+//	PA9     LCD_RS      //	PB9     Y_DIR           //	PC9         X_STEP
 //	PA10    LCD_SCK     //	PB10    BTN_ENC         //	PC10        Z_MIN_PROBE_PIN
 //	PA11    USB_D-      //	PB11    BTN_EN1         //	PC11        FIL_RUNOUT2
 //	PA12    USB_D+      //	PB12    LED             //	PC12        E1_DIR
@@ -65,15 +61,15 @@
 //=============================================================================
 
 //EXP1 connector
-//	   MARK     I/O     
-//	10	MOSI 	PB1    	KILL
-//	9	SCK  	PB0		BEEP
-//	8	TX1  	PA9		DOGLCD_CS
-//	7	RX1  	PA10	DOGLCD_SCK
-//	6	ENA	 	PC5    	BTN_EN2
-//	5	DAT  	PB2    	DOGLCD_MOSI
-//	4	TX3  	PB10   	BTN_ENC
-//	3	RX3  	PB11	BTN_EN1
+//	   MARK     I/O     ZONESTAR_12864LCD      ZONESTAR_12864OLED
+//	10	MOSI 	PB1    	KILL					SDA
+//	9	SCK  	PB0		BEEP					SCK
+//	8	TX1  	PA9		DOGLCD_CS				CS
+//	7	RX1  	PA10	DOGLCD_SCK				DC
+//	6	ENA	 	PC5    	BTN_EN2					KNOB_ENB
+//	5	DAT  	PB2    	DOGLCD_MOSI				RESET
+//	4	TX3  	PB10   	BTN_ENC					KNOB_ENC
+//	3	RX3  	PB11	BTN_EN1					KNOB_ENA
 //	2	+5V
 //	1	GND
 
@@ -85,11 +81,10 @@
 
 //AUX2 connector to BLtouch
 //	1	+5V 	    	
-//	2	SEN  	
-//	3	PWM  	
+//	2	SEN  	PC10
+//	3	PWM  	PA15
 //	4	GND
 //=============================================================================
-
 
 //
 // Limit Switches
@@ -153,47 +148,78 @@
 
 
 #define LED_PIN            PB12
-#define	KILL_PIN		   PB1			//@EXP1
+//#define	KILL_PIN		   PB1			//@EXP1
 #define	SUICIDE_PIN		   PA0
 
 //SD card
-#define SD_DETECT_PIN      PC4
-#define HAS_ONBOARD_SD
-#ifndef SDCARD_CONNECTION
-  #define SDCARD_CONNECTION              ONBOARD
-#endif
-#if SD_CONNECTION_IS(ONBOARD)
 #define ENABLE_SPI1
 #define SD_DETECT_PIN      PC4
 #define SCK_PIN            PA5
 #define MISO_PIN           PA6
 #define MOSI_PIN           PA7
 #define SS_PIN             PA4
-#endif
-#define ON_BOARD_SPI_DEVICE 1       //SPI1
-#define ONBOARD_SD_CS_PIN  PA4   	// Chip select for "System" SD card
+
 
 //
 // LCD Pins
 //
+//================================================================================
+//LCD 128x64
+//================================================================================
+//EXP1 connector
+//	   MARK     I/O     ZONESTAR_12864LCD      
+//	10	MOSI 	PB1    	KILL					
+//	9	SCK  	PB0		BEEP					
+//	8	TX1  	PA9		LCD_PINS_RS
+//	7	RX1  	PA10	LCD_PINS_D4
+//	6	ENA	 	PC5    	BTN_EN2
+//	5	DAT  	PB2    	LCD_PINS_ENABLE
+//	4	TX3  	PB10   	BTN_ENC
+//	3	RX3  	PB11	BTN_EN1
+//	2	+5V
+//	1	GND
 #if ENABLED(ZONESTAR_12864LCD)
-#define	LCDSCREEN_NAME		"ZONESTAR LCD12864"
-#define LCD_PINS_RS 		PA9		//7 DOGLCD_CS
-#define LCD_PINS_ENABLE 	PB2		//6 DOGLCD_MOSI
-#define LCD_PINS_D4 		PA10	//8 DOGLCD_SCK
-#define LCD_PINS_D5 		-1    	//mosi
-#define LCD_PINS_D6 		-1      
-#define LCD_PINS_D7 		-1
-#define BEEPER_PIN          PB0	
-#define BTN_EN1 			PB11
-#define BTN_EN2 			PC5
-#define BTN_ENC 			PB10
-#endif 
-
-#if HAS_GRAPHICAL_LCD
-#define BOARD_ST7920_DELAY_1 DELAY_NS(125)
-#define BOARD_ST7920_DELAY_2 DELAY_NS(150)
-#define BOARD_ST7920_DELAY_3 DELAY_NS(125)
+	#define	LCDSCREEN_NAME		"ZONESTAR LCD12864"
+	#define LCD_PINS_RS 		PA9
+	#define LCD_PINS_ENABLE		PB2
+	#define LCD_PINS_D4			PA10
+	//#define KILL_PIN			PB1
+	#define BEEPER_PIN			PB0	
+	#define BTN_EN1				PB11
+	#define BTN_EN2				PC5
+	#define BTN_ENC				PB10
+	
+	#define BOARD_ST7920_DELAY_1 DELAY_NS(125)
+	#define BOARD_ST7920_DELAY_2 DELAY_NS(200)
+	#define BOARD_ST7920_DELAY_3 DELAY_NS(125)
 #endif
 
+//================================================================================
+//OLED 128x64
+//================================================================================
+//	10	MOSI 	PB1    	OLED_SDA
+//	9	SCK  	PB0		OLED_SCK
+//	8	TX1  	PA9		OLED_CS
+//	7	RX1  	PA10	OLED_DC
+//	6	ENA	 	PC5    	KNOB_ENA
+//	5	DAT  	PB2    	OLED_RESET
+//	4	TX3  	PB10   	KNOB_ENC
+//	3	RX3  	PB11	KNOB_ENB
+
+#if EITHER(ZONESTAR_12864OLED,ZONESTAR_12864OLED_SSD1306)	
+  #ifndef FORCE_SOFT_SPI
+    #define FORCE_SOFT_SPI
+  #endif
+	#define LCDSCREEN_NAME	"ZONESTAR 12864OLED"
+	#define LCD_PINS_RS     PB2				//=LCD_RESET_PIN
+	#define LCD_PINS_DC     PA10				//DC
+	#define DOGLCD_CS       PA9				//CS
+	#define DOGLCD_A0       LCD_PINS_DC  		//A0 = DC
+	#define DOGLCD_MOSI		PB1				//SDA
+	#define DOGLCD_SCK	  	PB0				//SCK
+  	//Knob
+	#define BTN_EN1		  	PB11
+	#define BTN_EN2 		  	PC5
+	#define BTN_ENC 		  	PB10
+#endif//ENABLED(ZONESTAR_OLED12864)
 

@@ -1,7 +1,8 @@
 # ZONESTAR 3D Printer Control board  
-![ZRIB](ZRIB.jpg)  
-![ZM3E2](ZM3E2.jpg)
-![ZMIB](ZMIB.jpg)  
-![ZM3E4](ZM3E4.jpg)  
+- **8bit**
+**Included:*** ZMIB and ZRIB
+
+- **32bit**
+**Included:*** ZM3E2 and ZM3E4    
   
 

@@ -24,7 +24,7 @@ please refer to the file: [***pins_ZM3E4_V2_0.h***](https://github.com/ZONESTAR3
 ![PCB TOP Layer](PCB_TOP_ZM3E4_V21.jpg)  
 ![PCB Bottom Layer](PCB_BOTTOM_ZM3E4_V21.jpg)  
 ### Pin define
-please refer to the file: ***pins_ZM3E4_V2_0.h***  
+please refer to the file: [***pins_ZM3E4_V2_0.h***](https://github.com/ZONESTAR3D/Control-Board/blob/main/32bit/ZM3E4/pins_ZM3E4_V2_0.h)
 
 
 ## Wiring Diagram 

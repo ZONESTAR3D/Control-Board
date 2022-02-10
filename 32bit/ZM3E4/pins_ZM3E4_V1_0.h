@@ -90,13 +90,12 @@
 //	9  BP		PE11		BEEP								BEEP										
 //	8  EN		PE12		DOGLCD_CS						LCDRS								
 //	7  MOSI	PE10 		DOGLCD_SCK					LCDE								
-//	6  EN1	PE8    	BTN_EN1							NC								
+//	6  EN1	PE14    BTN_EN1							NC								
 //	5  SCK	PE9   	DOGLCD_MOSI					LCD4
 //	4  ENC 	PE15   	BTN_ENC							NC								
-//	3  EN2  PE14		BTN_EN2							NC								
+//	3  EN2  PE8			BTN_EN2							NC								
 //	2  +5V															+5V								
 //	1  GND															GND								
-
 
 //EXP2 connector								
 //	   MARK   I/O   LCD_DWIN						REPRAPDISCOUNT_LCD12864
@@ -110,8 +109,6 @@
 //	3	SCK3  	PB3		BTN_EN1							NC						
 //	2	+5V																+5V
 //	1	GND																GND
-
-
 
 //AUX1 connector
 //	1	+5V 	    	
@@ -350,6 +347,7 @@
 
 //SERVO
 //Remap SERVO0 PIN for BLTouch
+#if ENABLED(BLTOUCH)
 #if ENABLED(BLTOUCH_ON_EXP1)
 //BLTouch connect to EXP1
 #define	BLTOUCH_PROBE_PIN 		PE8
@@ -363,6 +361,7 @@
 #else
 #define	SERVO0_PIN		  			PB9	
 #define	BLTOUCH_PROBE_PIN 		PB13
+#endif
 #endif
 
 //#define	SERVO2_PIN		  PB7
@@ -379,20 +378,43 @@
 //Repeat printing
 //
 #if ENABLED(OPTION_REPEAT_PRINTING)
+//ENDSTOP pin of ARM
 #ifdef X_MAX_PIN
 #undef X_MAX_PIN
 #endif
 #ifdef Y_MAX_PIN
 #undef Y_MAX_PIN
 #endif
+#define RPARML_MIN_PIN   			PD8		//X_MAX_PIN
+#define RPARMR_MIN_PIN   			PB14	//Y_MAX_PIN
+
 //Motor drive pin
-#define RP_LFPRWARD_PIN       PA13
-#define RP_LBACK_PIN          PA14
-#define RP_RFPRWARD_PIN       PB6
-#define RP_RBACK_PIN          PB7
-//ENDSTOP pin
-#define RPL_MIN_PIN   				PD8		//X_MAX_PIN
-#define RPR_MIN_PIN   				PB14	//Y_MAX_PIN
+#if DISABLED(BLTOUCH)
+ #if ENABLED(ZONESTAR_DWIN_LCD)
+	 #define RP_LFPRWARD_PIN       PE8			//EXP1_PIN6
+	 #define RP_LBACK_PIN          PE15		//EXP1_PIN5
+	 #define RP_RFPRWARD_PIN       PE9			//EXP1_PIN4
+	 #define RP_RBACK_PIN          PE14		//EXP1_PIN3
+ #elif ENABLED(ZONESTAR_12864LCD)
+	 #define RP_LFPRWARD_PIN       PA15
+	 #define RP_LBACK_PIN          PB4
+	 #define RP_RFPRWARD_PIN       PB5
+	 #define RP_RBACK_PIN          PB3
+ #endif
+#else
+  #if ENABLED(BLTOUCH_ON_EXP1)
+		#define RP_LFPRWARD_PIN       PE10
+		#define RP_LBACK_PIN          PE11
+		#define RP_RFPRWARD_PIN       PE12
+		#define RP_RBACK_PIN          PE13
+	#elif ENABLED(BLTOUCH_ON_EXP2)
+		#define RP_LFPRWARD_PIN       PA10
+		#define RP_LBACK_PIN          PA9
+		#define RP_RFPRWARD_PIN       PB6
+		#define RP_RBACK_PIN          PE7
+	#endif
+#endif
+
 #endif
 
 //===========================================

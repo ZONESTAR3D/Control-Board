@@ -35,6 +35,9 @@
 ![ZM3E2](ZM3E2.jpg)
 
 -----
+## :arrow_down: [Download USB Driver for windows](./USBdriver/serial.zip)
+
+-----
 ## [Source code (for Reference only)](https://github.com/ZONESTAR3D/source-code-for-3d-printer)
 
 

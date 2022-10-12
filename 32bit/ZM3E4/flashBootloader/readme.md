@@ -10,19 +10,23 @@ You need a simply UART tool, for example a "USB to TTL Serial" converter, it loo
     TX0(PA9)    <--> connect to "TXD" of the UART tool  
     RX0(PA10)   <--> connect to "RXD" of the UART tool   
     GND         <--> connect to "GND" of the UART tool   
-### Download bootload bin file and tool
+
+### Bootload upload steps
+#### :one: Download bootload bin file and tool
 Download the [:arrow_down:**bootload bin file**](./ZM3E4_SDBootloader.zip) to your PC and unzip it.
 Download the [:arrow_down:**flymcu**](./flymcu.zip) tools to your PC and unzip it.
-### run flymcu, and choose the com port of your UART tool
+#### :two: Run flymcu, and choose the com port of your UART tool
 ![](1.jpg)
-### load bootload bin file
+#### :three: Load bootload bin file
 ![](2.jpg)
 ![](3.jpg)
-### click the start ISP button on "flymcu" tool
+#### :four: Click the start ISP button on "flymcu" tool
 ![](4.jpg)
-### short the "boot0" pin on the control board and then power on the control board
+#### :five: Short the "boot0" pin on the control board and then power on the control board
 :star2: You can use a metal tweezers to short circuit the two points shown in the following picture.    
 ![](5.jpg)
-### Wait until downloading finished.
+#### :six: Wait until downloading finished.
 Usually it take about 5~ 6 seconds, you can see the log information in the right window.   
 ![](6.jpg)
+
+### After uploaded bootloader, you can upload the firmware to the control board by SD card.

@@ -1,6 +1,6 @@
-## Flash the bootload to the ZM3E4 control board
+## How to flash "bootloader" of ZM3E4 control board
 ### Tools
-You need a simply UART tool, for example a "USB to TTL Serial" converter, it looks like the picture below[:point_right: sell link](https://www.aliexpress.com/item/32958291795.html):
+You need a simply UART tool to flash the bootloader to control board, for example a "USB to TTL Serial" converter, it looks like the picture below[:point_right: sell link](https://www.aliexpress.com/item/32345829369.html).
 ![](./tool.jpg) 
 
 ### Wiring

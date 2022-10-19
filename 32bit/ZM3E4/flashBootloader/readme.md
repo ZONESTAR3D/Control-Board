@@ -6,7 +6,7 @@ You need a simply UART tool to flash the bootloader to control board, for exampl
 ### Wiring
 ![](0.jpg)
 >
-    +5V         <--> If you UART need support power, connect it to your UART tool, otherwire let it float.   
+    +3.3V       <--> If you UART tool need support power from outside, connect it to your UART tool, otherwire let it float.
     TX0(PA9)    <--> connect to "RXD" of the UART tool  
     RX0(PA10)   <--> connect to "TXD" of the UART tool   
     GND         <--> connect to "GND" of the UART tool   

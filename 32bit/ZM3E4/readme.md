@@ -1,5 +1,6 @@
 # ZM3E4 control board documents 
 #### :arrow_down: [Download 3D drawing of ZM3E4](./zm3e4_step.zip)
+#### :arrow_down: [Download ZM3E4 USB Driver (for windows system)](./serial.zip)
 
 -----
 ## :file_folder:[ZM3E4V1.0](./ZM3E4V1/)

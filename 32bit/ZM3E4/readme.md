@@ -8,9 +8,11 @@
 - **[:blue_book: pdf file](./ZM3E4V21/SCH_ZM3E4V21.pdf)** 
 - **[:art: Schematic Diagram](./ZM3E4V21/SCH_ZM3E4V21.jpg)**
 ### PCB
+- **[:art: Designator](./ZM3E4V21/Designator_ZM3E4_V21.jpg)**  
 - **[:blue_book: pdf file](./ZM3E4V21/PCB_ZM3E4_V21.pdf)** 
 - **[:art: PCB TOP Layer](./ZM3E4V21/PCB_TOP_ZM3E4_V21.jpg)**  
 - **[:art: PCB Bottom Layer](./ZM3E4V21/PCB_BOTTOM_ZM3E4_V21.jpg)**  
+
 ### Pin define
 Please refer to the file: [***pins_ZM3E4_V2_0.h***](./ZM3E4V20/pins_ZM3E4_V2_0.h)
 
@@ -19,6 +21,7 @@ Please refer to the file: [***pins_ZM3E4_V2_0.h***](./ZM3E4V20/pins_ZM3E4_V2_0.h
 - **[:blue_book: pdf file](./ZM3E4V20/SCH_ZM3E4V20.pdf)** 
 - **[:art: Schematic Diagram](./ZM3E4V20/SCH_ZM3E4V20.jpg)**
 ### PCB
+- **[:art: Designator](./ZM3E4V20/Designator_ZM3E4_V2.jpg)**  
 - **[:blue_book: pdf file](./ZM3E4V20/PCB_ZM3E4_V20.pdf)** 
 - **[:art: PCB TOP Layer](./ZM3E4V20/PCB_TOP_ZM3E4_V20.jpg)**  
 - **[:art: PCB Bottom Layer](./ZM3E4V20/PCB_BOTTOM_ZM3E4_V20.jpg)**  
@@ -30,6 +33,7 @@ Please refer to the file: [***pins_ZM3E4_V2_0.h***](./ZM3E4V20/pins_ZM3E4_V2_0.h
 - **[:blue_book: pdf file](./ZM3E4V1/SCH_ZM3E4V1.pdf)** 
 - **[:art: Schematic Diagram](./ZM3E4V1/SCH_ZM3E4V1.jpg)**
 ### PCB
+- **[:art: Designator](./ZM3E4V1/Designator_ZM3E4_V1.jpg)**  
 - **[:blue_book: pdf file](./ZM3E4V1/PCB_ZM3E4_V1.pdf)** 
 - **[:art: PCB TOP Layer](./ZM3E4V1/PCB_TOP_ZM3E4_V1.jpg)** 
 - **[:art: PCB Bottom Layer](./ZM3E4V1/PCB_BOTTOM_ZM3E4_V1.jpg)** 

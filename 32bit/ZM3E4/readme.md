@@ -3,42 +3,29 @@
 #### :arrow_down: [Download ZM3E4 USB Driver (for windows system)](./serial.zip)
 
 -----
+## :file_folder: [ZM3E4V3](./ZM3E4V3/)
+- **[:blue_book: Schematic diagram](./ZM3E4V3/ZM3E4V3_SCH.pdf)** 
+- **[:blue_book: PCB-Designator](./ZM3E4V3/ZM3E4V3_Designator.pdf) [:art: PCB - Parts](./ZM3E4V3/ZM3E4V3_Parts.jpg) [:art: PCB - Layer](./ZM3E4V3/ZM3E4_V3_PCB.jpg)**  
+- **[:hash: Pin define ](./ZM3E4V3/pins_ZM3E4_V3_0.h)**
+
+-----
 ## :file_folder: [ZM3E4V2.1](./ZM3E4V21/)
-### Schematic diagram
-- **[:blue_book: pdf file](./ZM3E4V21/SCH_ZM3E4V21.pdf)** 
-- **[:art: Schematic Diagram](./ZM3E4V21/SCH_ZM3E4V21.jpg)**
-### PCB
-- **[:art: Designator](./ZM3E4V21/Designator_ZM3E4_V21.jpg)**  
-- **[:blue_book: pdf file](./ZM3E4V21/PCB_ZM3E4_V21.pdf)** 
-- **[:art: PCB TOP Layer](./ZM3E4V21/PCB_TOP_ZM3E4_V21.jpg)**  
-- **[:art: PCB Bottom Layer](./ZM3E4V21/PCB_BOTTOM_ZM3E4_V21.jpg)**  
+- **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V21.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V21.jpg)** 
+- **[:blue_book: PCB-Designator ](./ZM3E4V21/PCB_ZM3E4_V21.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V21.jpg)** 
+- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V2_0.h)**
 
-### Pin define
-Please refer to the file: [***pins_ZM3E4_V2_0.h***](./ZM3E4V20/pins_ZM3E4_V2_0.h)
-
+-----
 ## :file_folder: [ZM3E4V2.0](./ZM3E4V20/)
-### Schematic diagram
-- **[:blue_book: pdf file](./ZM3E4V20/SCH_ZM3E4V20.pdf)** 
-- **[:art: Schematic Diagram](./ZM3E4V20/SCH_ZM3E4V20.jpg)**
-### PCB
-- **[:art: Designator](./ZM3E4V20/Designator_ZM3E4_V2.jpg)**  
-- **[:blue_book: pdf file](./ZM3E4V20/PCB_ZM3E4_V20.pdf)** 
-- **[:art: PCB TOP Layer](./ZM3E4V20/PCB_TOP_ZM3E4_V20.jpg)**  
-- **[:art: PCB Bottom Layer](./ZM3E4V20/PCB_BOTTOM_ZM3E4_V20.jpg)**  
-### Pin define
-Please refer to the file: [***pins_ZM3E4_V2_0.h***](./ZM3E4V20/pins_ZM3E4_V2_0.h)
+- **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V20.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V20.jpg)** 
+- **[:blue_book: PCB-Designator ](./ZM3E4V21/PCB_ZM3E4_V20.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V2.jpg)** 
+- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V2_0.h)**
 
+-----
 ## :file_folder:[ZM3E4V1.0](./ZM3E4V1/)
-### Schematic diagram  
-- **[:blue_book: pdf file](./ZM3E4V1/SCH_ZM3E4V1.pdf)** 
-- **[:art: Schematic Diagram](./ZM3E4V1/SCH_ZM3E4V1.jpg)**
-### PCB
-- **[:art: Designator](./ZM3E4V1/Designator_ZM3E4_V1.jpg)**  
-- **[:blue_book: pdf file](./ZM3E4V1/PCB_ZM3E4_V1.pdf)** 
-- **[:art: PCB TOP Layer](./ZM3E4V1/PCB_TOP_ZM3E4_V1.jpg)** 
-- **[:art: PCB Bottom Layer](./ZM3E4V1/PCB_BOTTOM_ZM3E4_V1.jpg)** 
-### Pin define  
-Please refer to the file: [***pins_ZM3E4_V1_0.h***](./ZM3E4V1/pins_ZM3E4_V1_0.h)
+- **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V1.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V1.jpg)** 
+- **[:blue_book: PCB-Designator](./ZM3E4V21/PCB_ZM3E4_V1.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V1.jpg)** 
+- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V1_0.h)**
+
 
 -----
 ## :file_folder: [Bootloader](./flashBootloader/readme.md)

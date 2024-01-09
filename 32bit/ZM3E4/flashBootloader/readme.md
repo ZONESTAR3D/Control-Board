@@ -16,7 +16,7 @@ Download the [:arrow_down:**bootload bin file**](./ZM3E4_SDBootloader.zip) to yo
 Download the [:arrow_down:**Flymcu**](./flymcu.zip) tools to your PC and unzip it.
 
 ### Bootload upload steps
-#### ::one: Short the "boot0" pin on the control board and then power on the control board, and then disconnect "boot0" pin.
+#### :one: Short the "boot0" pin on the control board and then power on the control board, and then disconnect "boot0" pin.
 :star2: You can use a metal tweezers to short the two points shown in the following picture.    
 ![](5.gif)
 ![](ZM3E4V1.jpg)

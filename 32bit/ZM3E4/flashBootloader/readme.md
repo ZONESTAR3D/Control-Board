@@ -19,8 +19,9 @@ Download the [:arrow_down:**Flymcu**](./flymcu.zip) tools to your PC and unzip i
 #### :one: Short the "boot0" pin on the control board and then power on the control board, and then disconnect "boot0" pin.
 :star2: You can use a metal tweezers to short the two points shown in the following picture.    
 ![](5.gif)
-![](ZM3E4V1.jpg)
-![](ZM3E4V2.jpg)
+![](ZM3E4V1.jpg) ![](ZM3E4V2.jpg) ![](ZM3E4V3.jpg)      
+:warning: ZM3E4V3 has a jumper for selecting to supply power from USB (“NO” is selected by default). Before downloading, the jumper needs to be moved to "YES" (the right position).  
+![](ZM3E4V3_01.jpg) 
 #### :two: Run Flymcu, and choose the com port of your UART tool
 ![](1.jpg)
 #### :three: Load bootload hex file

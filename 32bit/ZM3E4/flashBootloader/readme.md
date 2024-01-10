@@ -1,6 +1,6 @@
 ## How to flash "bootloader" of ZM3E4 control board
 ### Tools
-You need a simply UART tool to flash the bootloader to control board, for example a "USB to TTL Serial" converter, it looks like the picture below[:point_right: sell link](https://www.aliexpress.com/item/32345829369.html).
+You need a simply UART tool to flash the bootloader to control board, for example a "USB to TTL Serial" converter, it looks like the picture below[:point_right: sell link](https://www.aliexpress.com/item/3256806252760671.html).     
 ![](./tool.jpg) 
 
 ### Wiring
@@ -12,8 +12,9 @@ You need a simply UART tool to flash the bootloader to control board, for exampl
     GND         <--> connect to "GND" of the UART tool   
 
 ### Download bootload bin file and tool
-Download the [:arrow_down:**bootload bin file**](./ZM3E4_SDBootloader.zip) to your PC and unzip it.
-Download the [:arrow_down:**Flymcu**](./flymcu.zip) tools to your PC and unzip it.
+- Download the [:arrow_down:**bootload bin file**](./ZM3E4_SDBootloader.zip) to your PC and unzip it. [:book: Release note of the bootloader](./ReleaseNote.md)       
+- Download the [:arrow_down:**Flymcu**](./flymcu.zip) tools to your PC and unzip it.   
+
 
 ### Bootload upload steps
 #### :one: Short the "boot0" pin on the control board and then power on the control board, and then disconnect "boot0" pin.

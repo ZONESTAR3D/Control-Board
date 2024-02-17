@@ -23,5 +23,5 @@ Both ZMIB and ZRIB used a CP2102 "USB to UART Bridge Virtual COM Port" chip, whe
 ![](Install_Driver.jpg)
 
 ----
-## Firmware Upload
+## Upload Firmware
 You can upload firmware to the ZRIB and ZMIB control boards by USB port of the PC. For details, please refer to this link: https://github.com/ZONESTAR3D/Firmware/tree/master/Firmware_Upload_tool_for_ZRIB_ZMIB

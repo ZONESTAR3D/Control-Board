@@ -12,19 +12,19 @@
 ## :file_folder: [ZM3E4V2.1](./ZM3E4V21/)
 - **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V21.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V21.jpg)** 
 - **[:blue_book: PCB-Designator ](./ZM3E4V21/PCB_ZM3E4_V21.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V21.jpg)** 
-- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V2_0.h)**
+- **[:hash: Pin define](./ZM3E4V21/pins_ZM3E4_V2_0.h)**
 
 -----
 ## :file_folder: [ZM3E4V2.0](./ZM3E4V20/)
-- **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V20.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V20.jpg)** 
-- **[:blue_book: PCB-Designator ](./ZM3E4V21/PCB_ZM3E4_V20.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V2.jpg)** 
-- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V2_0.h)**
+- **[:blue_book: Schematic diagram](./ZM3E4V20/SCH_ZM3E4V20.pdf) [:art: Image](./ZM3E4V20/SCH_ZM3E4V20.jpg)** 
+- **[:blue_book: PCB-Designator ](./ZM3E4V20/PCB_ZM3E4_V20.pdf) [:art: Image](./ZM3E4V20/Designator_ZM3E4_V2.jpg)** 
+- **[:hash: Pin define](./ZM3E4V20/pins_ZM3E4_V2_0.h)**
 
 -----
 ## :file_folder:[ZM3E4V1.0](./ZM3E4V1/)
-- **[:blue_book: Schematic diagram](./ZM3E4V21/SCH_ZM3E4V1.pdf) [:art: Image](./ZM3E4V21/SCH_ZM3E4V1.jpg)** 
-- **[:blue_book: PCB-Designator](./ZM3E4V21/PCB_ZM3E4_V1.pdf) [:art: Image](./ZM3E4V21/Designator_ZM3E4_V1.jpg)** 
-- **[:hash: Pin define](./ZM3E4V3/pins_ZM3E4_V1_0.h)**
+- **[:blue_book: Schematic diagram](./ZM3E4V1/SCH_ZM3E4V1.pdf) [:art: Image](./ZM3E4V1/SCH_ZM3E4V1.jpg)** 
+- **[:blue_book: PCB-Designator](./ZM3E4V1/PCB_ZM3E4_V1.pdf) [:art: Image](./ZM3E4V1/Designator_ZM3E4_V1.jpg)** 
+- **[:hash: Pin define](./ZM3E4V1/pins_ZM3E4_V1_0.h)**
 
 
 -----

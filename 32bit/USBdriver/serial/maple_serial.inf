@@ -1,28 +1,28 @@
-; 
-; STMicroelectronics Comunication Device Class driver instalation file
+;
+; STMicroelectronics Communication Device Class driver installation file
 ; (C)2006 Copyright STMicroelectronics
-; 
+;
 
-[Version] 
+[Version]
 Signature="$Windows NT$"
 Class=Ports
 ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
 Provider=%STM%
 LayoutFile=layout.inf
 
-[Manufacturer] 
+[Manufacturer]
 %MFGNAME%=VirComDevice,NT,NTamd64
 
 [DestinationDirs]
 DefaultDestDir = 12
 
 [VirComDevice.NT]
-%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0004
-%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0004
+%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0029&MI_01
+%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0029&MI_01
 
 [VirComDevice.NTamd64]
-%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0004
-%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0004
+%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0029&MI_01
+%DESCRIPTION%=DriverInstall,USB\VID_1EAF&PID_0029&MI_01
 
 [DriverInstall.NT]
 Include=mdmcpq.inf
@@ -42,14 +42,14 @@ DisplayName=%SERVICE%
 ServiceType=1
 StartType=3
 ErrorControl=1
-ServiceBinary=%12%\usbser.sys 
+ServiceBinary=%12%\usbser.sys
 
 ;------------------------------------------------------------------------------
 ;  String Definitions
 ;------------------------------------------------------------------------------
 
 
-[Strings] 
+[Strings]
 STM         = "LeafLabs"
 MFGNAME     = "LeafLabs"
 DESCRIPTION = "Maple R3"
